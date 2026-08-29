@@ -1,0 +1,398 @@
+                             *************************************************************
+                             *                           FUNCTION                          
+                             *************************************************************
+                               undefined  FUN_00551d3c ()
+                               assume FS_OFFSET = 0xffdff000
+             undefined         <UNASSIGNED>   <RETURN>
+             undefined4        Stack[-0x8]:4  local_8                                 XREF[3]:     00551d74 (W) , 
+                                                                                                   00551d8f (W) , 
+                                                                                                   00551db2 (W)   
+             undefined4        Stack[-0x10]:4 local_10                                XREF[1]:     005520e7 (R)   
+             undefined4        Stack[-0x14]:4 local_14                                XREF[1]:     00551d57 (W)   
+             undefined4        Stack[-0x18]:4 local_18                                XREF[2]:     00551d6c (W) , 
+                                                                                                   00551dc1 (R)   
+             undefined4        Stack[-0x1c]:4 local_1c                                XREF[2]:     00551d60 (W) , 
+                                                                                                   005520e4 (R)   
+             undefined4        Stack[-0x20]:4 local_20                                XREF[2]:     00551d5d (W) , 
+                                                                                                   005520e1 (R)   
+             undefined4        Stack[-0x24]:4 local_24                                XREF[2]:     00551d5a (W) , 
+                                                                                                   005520de (R)   
+             undefined4        Stack[-0x28]:4 local_28                                XREF[2]:     00551f80 (W) , 
+                                                                                                   00551f83 (R)   
+             undefined2        Stack[-0x30]:2 local_30                                XREF[3]:     00551f74 (W) , 
+                                                                                                   00551f77 (R) , 
+                                                                                                   00551f8c (R)   
+             undefined4        Stack[-0x34]:4 local_34                                XREF[23]:    00551d69 (W) , 
+                                                                                                   00551d7b (R) , 
+                                                                                                   00551da0 (R) , 
+                                                                                                   00551db9 (R) , 
+                                                                                                   00551dd0 (R) , 
+                                                                                                   00551de8 (R) , 
+                                                                                                   00551e0f (R) , 
+                                                                                                   00551e18 (R) , 
+                                                                                                   00551e47 (R) , 
+                                                                                                   00551e96 (R) , 
+                                                                                                   00551ecb (R) , 
+                                                                                                   00551ef3 (R) , 
+                                                                                                   00551f28 (R) , 
+                                                                                                   00551f2b (R) , 
+                                                                                                   00551f4e (R) , 
+                                                                                                   00551f56 (R) , 
+                                                                                                   00551fea (R) , 
+                                                                                                   00552012 (R) , 
+                                                                                                   00552043 (R) , 
+                                                                                                   0055205a (R)   
+                             FUN_00551d3c                                    XREF[1]:     FUN_00551c70:00551d12 (c)   
+        00551d3c 55              PUSH       EBP
+        00551d3d 8b  ec           MOV        EBP ,ESP
+        00551d3f 6a  ff           PUSH       -0x1
+        00551d41 68  c8  5f       PUSH       DAT_008d5fc8                                     = B8h
+                 8d  00
+        00551d46 64  a1  00       MOV        EAX ,FS:[0x0 ]=>ExceptionList                     = 00000000
+                 00  00  00
+        00551d4c 50              PUSH       EAX
+        00551d4d 64  89  25       MOV        dword ptr FS:[0x0 ]=>ExceptionList ,ESP           = 00000000
+                 00  00  00  00
+        00551d54 83  ec  24       SUB        ESP ,0x24
+        00551d57 89  65  f0       MOV        dword ptr [EBP  + local_14 ],ESP
+        00551d5a 89  7d  e0       MOV        dword ptr [EBP  + local_24 ],EDI
+        00551d5d 89  75  e4       MOV        dword ptr [EBP  + local_20 ],ESI
+        00551d60 89  5d  e8       MOV        dword ptr [EBP  + local_1c ],EBX
+        00551d63 8b  45  0c       MOV        EAX ,dword ptr [EBP  + Stack [0x8 ]]
+        00551d66 ff  75  08       PUSH       dword ptr [EBP  + Stack [0x4 ]]
+        00551d69 89  4d  d0       MOV        dword ptr [EBP  + local_34 ],ECX
+        00551d6c 89  45  ec       MOV        dword ptr [EBP  + local_18 ],EAX
+        00551d6f e8  78  99       CALL       FUN_0052b6ec                                     undefined FUN_0052b6ec()
+                 fd  ff
+        00551d74 c7  45  fc       MOV        dword ptr [EBP  + local_8 ],0x0
+                 00  00  00  00
+        00551d7b 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551d7e c7  01  e0       MOV        dword ptr [ECX ],PTR_FUN_00b041e0                = 005516b0
+                 41  b0  00
+        00551d84 81  c1  b0       ADD        ECX ,0x3b0
+                 03  00  00
+        00551d8a e8  69  05       CALL       FUN_005122f8                                     undefined FUN_005122f8()
+                 fc  ff
+        00551d8f c7  45  fc       MOV        dword ptr [EBP  + local_8 ],0x1
+                 01  00  00  00
+        00551d96 68  ec  70       PUSH       FUN_005770ec
+                 57  00
+        00551d9b 68  3c  71       PUSH       FUN_0057713c
+                 57  00
+        00551da0 8b  45  d0       MOV        EAX ,dword ptr [EBP  + local_34 ]
+        00551da3 6a  04           PUSH       0x4
+        00551da5 05  d4  03       ADD        EAX ,0x3d4
+                 00  00
+        00551daa 6a  1c           PUSH       0x1c
+        00551dac 50              PUSH       EAX
+        00551dad e8  84  69       CALL       `eh_vector_constructor_iterator'                 void `eh_vector_constructor_iter
+                 30  00
+        00551db2 c7  45  fc       MOV        dword ptr [EBP  + local_8 ],0x2
+                 02  00  00  00
+        00551db9 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551dbc a1  44  d9       MOV        EAX ,[PTR_DAT_009bd944 ]                          = 00a739ec
+                 9b  00
+        00551dc1 8b  55  ec       MOV        EDX ,dword ptr [EBP  + local_18 ]
+        00551dc4 8b  19           MOV        EBX ,dword ptr [ECX ]
+        00551dc6 89  41  04       MOV        dword ptr [ECX  + 0x4 ],EAX =>DAT_00a739ec
+        00551dc9 52              PUSH       EDX
+        00551dca ff  93  4c       CALL       dword ptr [EBX  + 0x14c ]=>->FUN_00786848         undefined FUN_00786848()
+                 01  00  00                                                                   = 00786848
+        00551dd0 8b  75  d0       MOV        ESI ,dword ptr [EBP  + local_34 ]
+        00551dd3 8b  46  38       MOV        EAX ,dword ptr [ESI  + 0x38 ]
+        00551dd6 8b  56  3c       MOV        EDX ,dword ptr [ESI  + 0x3c ]
+        00551dd9 8b  5e  40       MOV        EBX ,dword ptr [ESI  + 0x40 ]
+        00551ddc 89  86  a4       MOV        dword ptr [ESI  + 0x2a4 ],EAX
+                 02  00  00
+        00551de2 89  96  a8       MOV        dword ptr [ESI  + 0x2a8 ],EDX
+                 02  00  00
+        00551de8 8b  55  d0       MOV        EDX ,dword ptr [EBP  + local_34 ]
+        00551deb 89  9e  ac       MOV        dword ptr [ESI  + 0x2ac ],EBX
+                 02  00  00
+        00551df1 8b  ba  a4       MOV        EDI ,dword ptr [EDX  + 0x2a4 ]
+                 02  00  00
+        00551df7 8b  8a  a8       MOV        ECX ,dword ptr [EDX  + 0x2a8 ]
+                 02  00  00
+        00551dfd 8b  82  ac       MOV        EAX ,dword ptr [EDX  + 0x2ac ]
+                 02  00  00
+        00551e03 89  ba  98       MOV        dword ptr [EDX  + 0x298 ],EDI
+                 02  00  00
+        00551e09 89  8a  9c       MOV        dword ptr [EDX  + 0x29c ],ECX
+                 02  00  00
+        00551e0f 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551e12 89  82  a0       MOV        dword ptr [EDX  + 0x2a0 ],EAX
+                 02  00  00
+        00551e18 8b  55  d0       MOV        EDX ,dword ptr [EBP  + local_34 ]
+        00551e1b 8b  82  98       MOV        EAX ,dword ptr [EDX  + 0x298 ]
+                 02  00  00
+        00551e21 89  42  44       MOV        dword ptr [EDX  + 0x44 ],EAX
+        00551e24 8b  82  9c       MOV        EAX ,dword ptr [EDX  + 0x29c ]
+                 02  00  00
+        00551e2a 89  42  48       MOV        dword ptr [EDX  + 0x48 ],EAX
+        00551e2d 8b  82  a0       MOV        EAX ,dword ptr [EDX  + 0x2a0 ]
+                 02  00  00
+        00551e33 89  42  4c       MOV        dword ptr [EDX  + 0x4c ],EAX
+        00551e36 8b  81  70       MOV        EAX ,dword ptr [ECX  + 0x370 ]
+                 03  00  00
+        00551e3c 89  81  3c       MOV        dword ptr [ECX  + 0x33c ],EAX
+                 03  00  00
+        00551e42 e8  b1  02       CALL       FUN_005520f8                                     undefined FUN_005520f8()
+                 00  00
+        00551e47 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551e4a a1  e0  39       MOV        EAX ,[DAT_00a739e0 ]
+                 a7  00
+        00551e4f 8b  b9  70       MOV        EDI ,dword ptr [ECX  + 0x370 ]
+                 03  00  00
+        00551e55 8b  90  2c       MOV        EDX ,dword ptr [EAX  + 0x42c ]
+                 04  00  00
+        00551e5b 03  ff           ADD        EDI ,EDI
+        00551e5d 8b  5c  fa  08    MOV        EBX ,dword ptr [EDX  + EDI *0x8  + 0x8 ]
+        00551e61 89  59  34       MOV        dword ptr [ECX  + 0x34 ],EBX
+        00551e64 8b  b0  2c       MOV        ESI ,dword ptr [EAX  + 0x42c ]
+                 04  00  00
+        00551e6a 8b  54  fe  0c    MOV        EDX ,dword ptr [ESI  + EDI *0x8  + 0xc ]
+        00551e6e 89  51  24       MOV        dword ptr [ECX  + 0x24 ],EDX
+        00551e71 c7  81  d8       MOV        dword ptr [ECX  + 0xd8 ],DAT_009bd840             = 01h
+                 00  00  00 
+                 40  d8  9b  00
+        00551e7b 8b  80  30       MOV        EAX ,dword ptr [EAX  + 0x430 ]
+                 04  00  00
+        00551e81 89  81  dc       MOV        dword ptr [ECX  + 0xdc ],EAX
+                 00  00  00
+        00551e87 33  c0           XOR        EAX ,EAX
+        00551e89 50              PUSH       EAX
+        00551e8a 66  89  81       MOV        word ptr [ECX  + 0xb8 ],AX
+                 b8  00  00  00
+        00551e91 e8  32  86       CALL       FUN_007aa4c8                                     undefined FUN_007aa4c8()
+                 25  00
+        00551e96 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551e99 6a  01           PUSH       0x1
+        00551e9b 0f  b7  81       MOVZX      EAX ,word ptr [ECX  + 0xb8 ]
+                 b8  00  00  00
+        00551ea2 8b  91  3c       MOV        EDX ,dword ptr [ECX  + 0x33c ]
+                 03  00  00
+        00551ea8 66  89  81       MOV        word ptr [ECX  + 0xb8 ],AX
+                 b8  00  00  00
+        00551eaf 8d  1c  12       LEA        EBX ,[EDX  + EDX *0x1 ]
+        00551eb2 03  db           ADD        EBX ,EBX
+        00551eb4 2b  da           SUB        EBX ,EDX
+        00551eb6 03  db           ADD        EBX ,EBX
+        00551eb8 03  db           ADD        EBX ,EBX
+        00551eba 2b  da           SUB        EBX ,EDX
+        00551ebc 03  db           ADD        EBX ,EBX
+        00551ebe 8d  b4  1b       LEA        ESI ,[EBX  + EBX *0x1  + DAT_009bd7a0 ]
+                 a0  d7  9b  00
+        00551ec5 56              PUSH       ESI
+        00551ec6 e8  bd  7b       CALL       FUN_007b9a88                                     undefined FUN_007b9a88()
+                 26  00
+        00551ecb 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551ece 8b  1d  c4       MOV        EBX ,dword ptr [DAT_00a739c4 ]
+                 39  a7  00
+        00551ed4 8b  15  c0       MOV        EDX ,dword ptr [DAT_00a739c0 ]
+                 39  a7  00
+        00551eda a1  bc  39       MOV        EAX ,[DAT_00a739bc ]
+                 a7  00
+        00551edf 8b  b1  3c       MOV        ESI ,dword ptr [ECX  + 0x33c ]
+                 03  00  00
+        00551ee5 ff  34  b0       PUSH       dword ptr [EAX  + ESI *0x4 ]
+        00551ee8 ff  34  b2       PUSH       dword ptr [EDX  + ESI *0x4 ]
+        00551eeb ff  34  b3       PUSH       dword ptr [EBX  + ESI *0x4 ]
+        00551eee e8  05  4a       CALL       FUN_007868f8                                     undefined FUN_007868f8()
+                 23  00
+        00551ef3 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551ef6 8b  81  3c       MOV        EAX ,dword ptr [ECX  + 0x33c ]
+                 03  00  00
+        00551efc 0f  b7  b1       MOVZX      ESI ,word ptr [ECX  + 0x334 ]
+                 34  03  00  00
+        00551f03 03  c0           ADD        EAX ,EAX
+        00551f05 03  c0           ADD        EAX ,EAX
+        00551f07 8d  14  00       LEA        EDX ,[EAX  + EAX *0x1 ]
+        00551f0a 03  d2           ADD        EDX ,EDX
+        00551f0c 03  d2           ADD        EDX ,EDX
+        00551f0e 2b  d0           SUB        EDX ,EAX
+        00551f10 8d  9a  40       LEA        EBX ,[EDX  + DAT_009bd740 ]
+                 d7  9b  00
+        00551f16 89  99  58       MOV        dword ptr [ECX  + 0x358 ],EBX
+                 03  00  00
+        00551f1c 66  89  b1       MOV        word ptr [ECX  + 0x346 ],SI
+                 46  03  00  00
+        00551f23 e8  e4  53       CALL       FUN_0078730c                                     undefined FUN_0078730c()
+                 23  00
+        00551f28 8b  75  d0       MOV        ESI ,dword ptr [EBP  + local_34 ]
+        00551f2b 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551f2e 8b  86  00       MOV        EAX ,dword ptr [ESI  + 0x300 ]
+                 03  00  00
+        00551f34 8b  96  04       MOV        EDX ,dword ptr [ESI  + 0x304 ]
+                 03  00  00
+        00551f3a 8b  9e  08       MOV        EBX ,dword ptr [ESI  + 0x308 ]
+                 03  00  00
+        00551f40 89  46  74       MOV        dword ptr [ESI  + 0x74 ],EAX
+        00551f43 89  56  78       MOV        dword ptr [ESI  + 0x78 ],EDX
+        00551f46 89  5e  7c       MOV        dword ptr [ESI  + 0x7c ],EBX
+        00551f49 e8  6e  4c       CALL       FUN_00786bbc                                     undefined FUN_00786bbc()
+                 23  00
+        00551f4e 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        00551f51 e8  5a  32       CALL       FUN_007751b0                                     undefined FUN_007751b0()
+                 22  00
+        00551f56 8b  75  d0       MOV        ESI ,dword ptr [EBP  + local_34 ]
+        00551f59 d9  05  14       FLD        float ptr [DAT_00924814 ]
+                 48  92  00
+        00551f5f 8b  8e  e8       MOV        ECX ,dword ptr [ESI  + 0x2e8 ]
+                 02  00  00
+        00551f65 8b  5e  30       MOV        EBX ,dword ptr [ESI  + 0x30 ]
+        00551f68 dc  c9           FMUL       ST1
+        00551f6a d9  c9           FXCH
+        00551f6c d8  0d  10       FMUL       float ptr [DAT_00924810 ]
+                 48  92  00
+        00551f72 de  f1           FDIVRP
+        00551f74 d9  7d  d4       FNSTCW     word ptr [EBP  + local_30 ]
+        00551f77 0f  b7  45  d4    MOVZX      EAX ,word ptr [EBP  + local_30 ]
+        00551f7b 0d  00  0c       OR         EAX ,0xc00
+                 00  00
+        00551f80 89  45  dc       MOV        dword ptr [EBP  + local_28 ],EAX
+        00551f83 d9  6d  dc       FLDCW      word ptr [EBP  + local_28 ]
+        00551f86 db  9e  b0       FISTP      dword ptr [ESI  + 0x2b0 ]
+                 02  00  00
+        00551f8c d9  6d  d4       FLDCW      word ptr [EBP  + local_30 ]
+        00551f8f b8  0f  00       MOV        EAX ,0xf
+                 00  00
+        00551f94 c7  86  90       MOV        dword ptr [ESI  + 0x390 ],0xc0800000
+                 03  00  00 
+                 00  00  80  c0
+        00551f9e 81  cb  00       OR         EBX ,0x40000
+                 00  04  00
+        00551fa4 66  89  86       MOV        word ptr [ESI  + 0x342 ],AX
+                 42  03  00  00
+        00551fab 66  89  86       MOV        word ptr [ESI  + 0x344 ],AX
+                 44  03  00  00
+        00551fb2 33  d2           XOR        EDX ,EDX
+        00551fb4 66  89  96       MOV        word ptr [ESI  + 0x330 ],DX
+                 30  03  00  00
+        00551fbb 66  89  96       MOV        word ptr [ESI  + 0x37c ],DX
+                 7c  03  00  00
+        00551fc2 66  89  96       MOV        word ptr [ESI  + 0x37e ],DX
+                 7e  03  00  00
+        00551fc9 89  96  80       MOV        dword ptr [ESI  + 0x380 ],EDX
+                 03  00  00
+        00551fcf 89  96  84       MOV        dword ptr [ESI  + 0x384 ],EDX
+                 03  00  00
+        00551fd5 83  c9  08       OR         ECX ,0x8
+        00551fd8 89  8e  e8       MOV        dword ptr [ESI  + 0x2e8 ],ECX
+                 02  00  00
+        00551fde 89  5e  30       MOV        dword ptr [ESI  + 0x30 ],EBX
+        00551fe1 e8  86  ee       CALL       FUN_00520e6c                                     undefined FUN_00520e6c()
+                 fc  ff
+        00551fe6 85  c0           TEST       EAX ,EAX
+        00551fe8 74  28           JZ         LAB_00552012
+        00551fea 8b  45  d0       MOV        EAX ,dword ptr [EBP  + local_34 ]
+        00551fed 8b  80  3c       MOV        EAX ,dword ptr [EAX  + 0x33c ]
+                 03  00  00
+        00551ff3 83  f8  01       CMP        EAX ,0x1
+        00551ff6 75  07           JNZ        LAB_00551fff
+        00551ff8 bb  40  00       MOV        EBX ,0xffff0040
+                 ff  ff
+        00551ffd eb  39           JMP        LAB_00552038
+                             LAB_00551fff                                    XREF[1]:     00551ff6 (j)   
+        00551fff 83  f8  02       CMP        EAX ,0x2
+        00552002 75  07           JNZ        LAB_0055200b
+        00552004 bb  00  ff       MOV        EBX ,0xffffff00
+                 ff  ff
+        00552009 eb  2d           JMP        LAB_00552038
+                             LAB_0055200b                                    XREF[1]:     00552002 (j)   
+        0055200b bb  20  ff       MOV        EBX ,0xff20ff20
+                 20  ff
+        00552010 eb  26           JMP        LAB_00552038
+                             LAB_00552012                                    XREF[1]:     00551fe8 (j)   
+        00552012 8b  45  d0       MOV        EAX ,dword ptr [EBP  + local_34 ]
+        00552015 8b  80  3c       MOV        EAX ,dword ptr [EAX  + 0x33c ]
+                 03  00  00
+        0055201b 83  f8  01       CMP        EAX ,0x1
+        0055201e 75  07           JNZ        LAB_00552027
+        00552020 bb  00  00       MOV        EBX ,0xffff0000
+                 ff  ff
+        00552025 eb  11           JMP        LAB_00552038
+                             LAB_00552027                                    XREF[1]:     0055201e (j)   
+        00552027 83  f8  02       CMP        EAX ,0x2
+        0055202a 75  07           JNZ        LAB_00552033
+        0055202c bb  00  ff       MOV        EBX ,0xffffff00
+                 ff  ff
+        00552031 eb  05           JMP        LAB_00552038
+                             LAB_00552033                                    XREF[1]:     0055202a (j)   
+        00552033 bb  ff  00       MOV        EBX ,0xff0000ff
+                 00  ff
+                             LAB_00552038                                    XREF[5]:     00551ffd (j) , 00552009 (j) , 
+                                                                                          00552010 (j) , 00552025 (j) , 
+                                                                                          00552031 (j)   
+        00552038 53              PUSH       EBX
+        00552039 68  30  30       PUSH       0xa0303030
+                 30  a0
+        0055203e e8  81  6c       CALL       FUN_00578cc4                                     undefined FUN_00578cc4()
+                 02  00
+        00552043 8b  55  d0       MOV        EDX ,dword ptr [EBP  + local_34 ]
+        00552046 53              PUSH       EBX
+        00552047 68  30  30       PUSH       0xa0303030
+                 30  a0
+        0055204c 89  82  cc       MOV        dword ptr [EDX  + 0x3cc ],EAX
+                 03  00  00
+        00552052 e8  6d  6c       CALL       FUN_00578cc4                                     undefined FUN_00578cc4()
+                 02  00
+        00552057 83  c4  10       ADD        ESP ,0x10
+        0055205a 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        0055205d 8b  91  3c       MOV        EDX ,dword ptr [ECX  + 0x33c ]
+                 03  00  00
+        00552063 c7  81  98       MOV        dword ptr [ECX  + 0x398 ],0x1
+                 03  00  00 
+                 01  00  00  00
+        0055206d 89  81  d0       MOV        dword ptr [ECX  + 0x3d0 ],EAX
+                 03  00  00
+        00552073 a1  b8  39       MOV        EAX ,[DAT_00a739b8 ]
+                 a7  00
+        00552078 8b  1c  90       MOV        EBX ,dword ptr [EAX  + EDX *0x4 ]
+        0055207b 8b  33           MOV        ESI ,dword ptr [EBX ]
+        0055207d 89  b1  a0       MOV        dword ptr [ECX  + 0x3a0 ],ESI
+                 03  00  00
+        00552083 8b  3c  90       MOV        EDI ,dword ptr [EAX  + EDX *0x4 ]
+        00552086 8b  5f  04       MOV        EBX ,dword ptr [EDI  + 0x4 ]
+        00552089 89  99  a8       MOV        dword ptr [ECX  + 0x3a8 ],EBX
+                 03  00  00
+        0055208f 8b  1c  90       MOV        EBX ,dword ptr [EAX  + EDX *0x4 ]
+        00552092 8b  5b  08       MOV        EBX ,dword ptr [EBX  + 0x8 ]
+        00552095 89  99  a4       MOV        dword ptr [ECX  + 0x3a4 ],EBX
+                 03  00  00
+        0055209b 8b  04  90       MOV        EAX ,dword ptr [EAX  + EDX *0x4 ]
+        0055209e 8b  40  0c       MOV        EAX ,dword ptr [EAX  + 0xc ]
+        005520a1 89  81  ac       MOV        dword ptr [ECX  + 0x3ac ],EAX
+                 03  00  00
+        005520a7 33  db           XOR        EBX ,EBX
+                             LAB_005520a9                                    XREF[1]:     005520ce (j)   
+        005520a9 8d  04  1b       LEA        EAX ,[EBX  + EBX *0x1 ]
+        005520ac 03  c0           ADD        EAX ,EAX
+        005520ae 8d  14  00       LEA        EDX ,[EAX  + EAX *0x1 ]
+        005520b1 03  d2           ADD        EDX ,EDX
+        005520b3 03  d2           ADD        EDX ,EDX
+        005520b5 2b  d0           SUB        EDX ,EAX
+        005520b7 8d  8c  11       LEA        ECX ,[ECX  + EDX *0x1  + 0x3d4 ]
+                 d4  03  00  00
+        005520be e8  d9  52       CALL       FUN_0057739c                                     undefined FUN_0057739c()
+                 02  00
+        005520c3 83  c3  01       ADD        EBX ,0x1
+        005520c6 83  fb  04       CMP        EBX ,0x4
+        005520c9 7d  05           JGE        LAB_005520d0
+        005520cb 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        005520ce eb  d9           JMP        LAB_005520a9
+                             LAB_005520d0                                    XREF[1]:     005520c9 (j)   
+        005520d0 8b  4d  d0       MOV        ECX ,dword ptr [EBP  + local_34 ]
+        005520d3 8b  01           MOV        EAX ,dword ptr [ECX ]
+        005520d5 ff  90  50       CALL       dword ptr [EAX  + 0x150 ]=>->FUN_004adce0         undefined FUN_004adce0()
+                 01  00  00                                                                   = 004adce0
+        005520db 8b  45  d0       MOV        EAX ,dword ptr [EBP  + local_34 ]
+        005520de 8b  7d  e0       MOV        EDI ,dword ptr [EBP  + local_24 ]
+        005520e1 8b  75  e4       MOV        ESI ,dword ptr [EBP  + local_20 ]
+        005520e4 8b  5d  e8       MOV        EBX ,dword ptr [EBP  + local_1c ]
+        005520e7 8b  4d  f4       MOV        ECX ,dword ptr [EBP  + local_10 ]
+        005520ea 64  89  0d       MOV        dword ptr FS:[0x0 ]=>ExceptionList ,ECX           = 00000000
+                 00  00  00  00
+        005520f1 8b  e5           MOV        ESP ,EBP
+        005520f3 5d              POP        EBP
+        005520f4 c2  08  00       RET        0x8
+        005520f7 90              ??         90h
